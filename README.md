@@ -8,9 +8,10 @@ I applied the Score-CAM on 1D-CNN classifying the electrocardiogram (ECG). For t
 ## Results
 ### Accuracy
 ```
-loss: 0.049, acc: 0.988
+loss: 0.029, Acc: 0.99
 ```
 ![confusion_matrix](images/cm.png "confusion_matrix")
 
 ### Example visualization
-The highlighted background indicates CAM values below 90th percentile of all the CAM value. The algorithm seems to capture where the PVC occurs.
+The highlighted background indicates CAM values above 90th percentile of all the CAM value. The algorithm seems to capture where the PVC occurs.
+![confusion_matrix](images/ecg_cam.png "cam_example")
